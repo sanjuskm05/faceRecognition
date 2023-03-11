@@ -10,6 +10,7 @@ import Register from "./screens/Register";
 import CartScreen from "./screens/CartScreen";
 import ShippingScreen from "./screens/ShippingScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import FacecaptchaScreen from "./screens/FacecaptchaScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/payment" component={PaymentScreen} />
         <Route path="/placeorder" component={PlaceOrderScreen} />
         <Route path="/order/:id" component={OrderScreen} />
+        <Route path="/facecaptcha" component={FacecaptchaScreen} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Router>
